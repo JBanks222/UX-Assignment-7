@@ -9,23 +9,24 @@
 <body>
     <div class="main-window">
         <div class="product-block">
-            <img src="product1.jpg" alt="Product 1">
-            <p>Product 1 Description</p>
-            <button onclick="openModal('modal1')">Open Modal 1</button>
+            <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=600,height=400,format=auto,quality=80/https://doordash-static.s3.amazonaws.com/media/store/header/ce961672-2203-4fc2-8880-bb138598b300.png" alt="Delicious Fried Chicken">
+            <h3>Delicious Fried Chicken</h3>
+            <p>Enjoy our crispy, golden-brown fried chicken, perfect for satisfying your comfort food cravings.</p>
+            <button class="open-modal-btn" onclick="openModal('modal1')">Show Modal 1</button>
         </div>
         <div class="product-block">
-            <img src="product2.jpg" alt="Product 2">
-            <p>Product 2 Description</p>
-            <button onclick="openModal('modal2')">Open Modal 2</button>
+            <img src="https://www.pizzahut.com/assets/w/images/homepage_deal/Sidekick_BDB_LargeMobile_541x282_v2.jpg" alt="Tasty Pizza Deal">
+            <h3>Tasty Pizza Deal</h3>
+            <p>Get a delicious pizza combo with sides, specially prepared to bring the flavors you love.</p>
+            <button class="open-modal-btn" onclick="openModal('modal2')">Show Modal 2</button>
         </div>
-        <!-- Add more product blocks here if needed -->
     </div>
 
     <div id="modal1" class="modal">
         <div class="modal-content blue-background">
             <span class="close" onclick="closeModal('modal1')">&times;</span>
             <h2>Modal Window One</h2>
-            <p>This is the content for Modal Window One.</p>
+            <p>This is the content of Modal Window One for the Delicious Fried Chicken.</p>
         </div>
     </div>
 
@@ -33,7 +34,7 @@
         <div class="modal-content green-background">
             <span class="close" onclick="closeModal('modal2')">&times;</span>
             <h2>Modal Window Two</h2>
-            <p>This is the content for Modal Window Two.</p>
+            <p>This is the content of Modal Window Two for the Tasty Pizza Deal.</p>
         </div>
     </div>
 
@@ -47,4 +48,5 @@
     </script>
 </body>
 </html>
+
 
