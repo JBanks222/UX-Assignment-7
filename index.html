@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7 - Modal Windows</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-window">
+        <div class="product-block">
+            <img src="product1.jpg" alt="Product 1">
+            <p>Product 1 Description</p>
+            <button onclick="openModal('modal1')">Open Modal 1</button>
+        </div>
+        <div class="product-block">
+            <img src="product2.jpg" alt="Product 2">
+            <p>Product 2 Description</p>
+            <button onclick="openModal('modal2')">Open Modal 2</button>
+        </div>
+        <!-- Add more product blocks here if needed -->
+    </div>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content blue-background">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Modal Window One</h2>
+            <p>This is the content for Modal Window One.</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content green-background">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Modal Window Two</h2>
+            <p>This is the content for Modal Window Two.</p>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = 'block';
+        }
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+
